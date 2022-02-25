@@ -6,6 +6,13 @@ class ListNode {
     public ListNode(int value){
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                 + value + "(" + hashCode() + ")"
+               + '}';
+    }
 }
 public class LinkedListCycle {
     public static void main(String[] args) {
